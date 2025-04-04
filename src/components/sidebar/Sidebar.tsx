@@ -5,7 +5,6 @@ import {usePathname} from "next/navigation";
 import Link from "next/link";
 import {LuMailCheck, LuUsers} from "react-icons/lu";
 
-type Props = {};
 
 interface SidebarLinkProps {
     href: string,
@@ -27,7 +26,7 @@ export const SidebarLink:FC<SidebarLinkProps> = ({href, icon: Icon, label}):Reac
     )
 }
 
-const Sidebar:FC<Props> = ():React.JSX.Element =>{
+const Sidebar = ():React.JSX.Element =>{
     return (
         <div className={`fixed flex flex-col w-[17rem] bg-white h-full border-r border-gray-300`}>
             <h2 className={"p-[22px] px-[40px] mb-0 font-[500] text-2xl"}>Pages</h2>
